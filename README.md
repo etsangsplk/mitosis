@@ -1,5 +1,12 @@
 ## Mitosis
 
+**Note**: I've noticed a lot of people are following this repo. Be warned that
+this is very much work in progress. While forking and sharing of custom state
+data is working as intended, sharing of file descriptors is not. A solution to
+this is turning out to be more involved than initially anticipated
+(See issue #3). Therefore, don't expect miracles from this package (yet).
+
+
 ### Short description
 
 Mitosis allows Go applications to easily fork themselves while preserving
