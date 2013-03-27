@@ -13,15 +13,14 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"github.com/jteeuwen/mitosis"
 	"log"
 	"os"
 	"time"
 )
 
-var (
-	logger *log.Logger
-)
+var logger *log.Logger
 
 func main() {
 	flag.Parse()
@@ -65,6 +64,6 @@ func initLog() *os.File {
 		panic(err)
 	}
 
-	logger = log.New(logfile, "", log.LstdFlags)
+	logger = log.New(logfile, fmt.Sprintf("[%d] ", os.Getpid()), log.LstdFlags)
 	return logfile
 }
