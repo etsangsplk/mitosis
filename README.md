@@ -21,7 +21,7 @@ itself relaunched into a new session, while allowing it to pass on arbitrary
 application state to the new instance. This includes inheritance of open
 file descriptors.
 
-Any aplication wanting to hook into this service, must import this package,
+Any application wanting to hook into this service, must import this package,
 and implement the API it exposes. An example of this can be seen in
 `testdata/main.go`.
 
